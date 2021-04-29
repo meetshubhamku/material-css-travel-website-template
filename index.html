@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        $(document).ready(function(){
+            $(".sidenav").sidenav();
+            $(".modal").modal();
+            $(".materialbox").materialbox();
+            $(".datepicker").datepicker();
+            $(".scrollspy").scrollSpy();
+        });
+    </script>
+    
+    <title>Travel</title>
+</head>
+<body>
+
+
+<div class="navbar-fixed" id="home">
+    <nav class="nav-wrapper white">
+        <div class="container">
+            <a href="#" class="brand-logo black-text bold">
+                <span>Life#Travel</span>
+            </a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons black-text">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booknow" class="btn blue-grey darken-4 white-text modal-trigger">Book Now</a></li>
+                <li><a href="#modal1" class="btn-floating modal-trigger"><i class="material-icons blue-grey darken-4">search</i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--Top scroll button-->
+<a href="#home" id="scrolltop" class="btn-large btn-floating red darken-3 pulse scrollspy">
+    <i class="material-icons">keyboard_arrow_up</i>
+</a>
+
+
+<!--Video-->
+<div class="container-wrapper">
+    <video class="responsive-video" autoplay loop>
+        <source src="./videos/bgvideo.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+
+<!--Mobile MENU (Don't Delete)-->
+<ul class="sidenav" id="mobile-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#booknow">Book Now</a></li>
+    <li><a href="#modal1" class="modal-trigger">Search Destination</a></li>
+</ul>
+
+<!--Modal for search button-->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="black-text bold center">Search Your Destination</h4>
+      <div class="container">
+        <form action="">
+            <div class="input-field">
+                <input type="text" placeholder="Destination Name">
+            </div>
+            <button href="#" class=" btn black right">Search</Button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+    </div>
+</div>
+
+
+
+
+<!--Popular Destinations-->
+<div class="container black-text">
+    <h3 class="center bold">Popular Destinations</h3>
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./images/paris.jpg" class="responsive-img materialbox" alt="">
+                    <button class="btn-floating pulse pink halfway-fab">
+                        <i class="material-icons">favorite</i>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h4 class="bold">Paris</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./images/sydney.jpg" class="responsive-img materialbox" alt="">
+                    <button class="btn-floating pulse pink halfway-fab">
+                        <i class="material-icons">favorite</i>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h4 class="bold">Sydney</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./images/greece.jpg" class="responsive-img materialbox" alt="">
+                    <button class="btn-floating pulse pink halfway-fab">
+                        <i class="material-icons">favorite</i>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h4 class="bold">Greece</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./images/india.jpg" class="responsive-img materialbox" alt="">
+                    <button class="btn-floating pulse pink halfway-fab">
+                        <i class="material-icons">favorite</i>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h4 class="bold">India</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./images/thailand.jpg" class="responsive-img materialbox" alt="">
+                    <button class="btn-floating pulse pink halfway-fab">
+                        <i class="material-icons">favorite</i>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h4 class="bold">Thailand</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./images/spain.jpg" class="responsive-img materialbox" alt="">
+                    <button class="btn-floating pulse pink halfway-fab">
+                        <i class="material-icons">favorite</i>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h4 class="bold">Spain</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--About-->
+<div class="section container-wrapper white-text scrollspy blue-grey darken-4" id="about">
+    <div class="section container">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <img src="./images/about1.jpg" alt="" class="responsive-img materialbox">
+            </div>
+            <div class="col s12 m12 l6">
+                <h5 class="bold center-align">
+                    Live a life worth remembering...
+                </h5>
+                <p class="center-align">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam animi eos atque cupiditate placeat sint aspernatur ut. Optio labore facere iste? Minus atque voluptatem expedita culpa suscipit unde adipisci.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--BookNow-->
+<div class="container-wrapper scrollspy" id="booknow">
+    <div class="container valign-wrapper">
+        <div class="center container">
+            <h3 class="center bold">Book a trip without leaving your home</h3>
+            <p class="hide-on-med-and-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed error, iusto doloribus aliquid vero laboriosam id porro consectetur consequatur quasi molestiae tenetur repudiandae suscipit distinctio ipsa, possimus temporibus quia!</p>
+            <button class="btn-large bold red darken-4">Book Now</button>
+        </div>
+    </div>
+</div>
+
+<!--Team-->
+<div class="container scrollspy" id="team">
+    <h3 class="bold center">Our Expert Team</h3>
+    <div class="row">
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/team1.jpg" class="responsive-img materialbox " alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title bold">
+                        <b>Sam</b>
+                        <h6>(Agency Director)</h6>
+                    </div>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-facebook blue darken-5"></i></a>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-instagram pink darken-5"></i></a>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-twitter blue darken-5"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/team2.jpg" class="responsive-img materialbox " alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title bold">
+                        <b>Jason</b>
+                        <h6>(Travel Agent)</h6>
+                    </div>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-facebook blue darken-5"></i></a>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-instagram pink darken-5"></i></a>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-twitter blue darken-5"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/team3.jpg" class="responsive-img materialbox " alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title bold">
+                       <b>Toa</b>
+                       <h6>(Tour Guide)</h6>
+                    </div>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-facebook blue darken-5"></i></a>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-instagram pink darken-5"></i></a>
+                    <a href="#" class="btn-small btn-floating"><i class="fa fa-twitter blue darken-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Footer-->
+<footer class="page-footer blue-grey darken-4">
+    <div class="row">
+        <div class="col s12 m12 l6">
+            <div class="container">
+                <h4 class="bold">Follow Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit omnis debitis hic rem inventore doloribus placeat, soluta sunt ipsa? Tempora qui nemo fugiat doloremque fugit autem laborum omnis numquam.</p>
+                <a href="#" class="btn-floating">
+                    <i class="fa fa-facebook blue darken-4"></i>
+                </a>
+                <a href="#" class="btn-floating pink">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="btn-floating">
+                    <i class="fa fa-twitter blue"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col s12 m12 l6">
+            <div class="container scrollspy" id="contact">
+                <h4 class="bold">Contact Us</h4>
+                <div class="input-field">
+                    <input type="text" id="name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <textarea class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <div class="input-field">
+                <button class="btn-large red darken-4">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center">
+        <div class="container center-align">
+            &copy Powered by UTechyOnline || 2020
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>
